@@ -20,5 +20,5 @@
 * 경우에 따라서 resolving android dependencies가 실행되어 플러그인에 필요한 요소들을 프로젝트를 설치해줌
   * Android Resolver > Force Resolve로도 실행 가능
   * resolving android dependencies는 다음과 같은 경우로 인해 정상적으로 동작하지 않을 수 있음
-  * 안드로이드 스튜디오 버전 업데이트, JDK, 보안프로그램(금융 사이트등에서 실행되는)
+  * android SDK & JDK 버전 및 미설치, 금융 사이트등에서의 보안프로그램 실행으로 인해
 
