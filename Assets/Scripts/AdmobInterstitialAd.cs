@@ -9,7 +9,7 @@ public class AdmobInterstitialAd : MonoBehaviour
     private readonly string unitID = "ca-app-pub-3940256099942544/1033173712";
     private readonly string testUnitID = "ca-app-pub-3940256099942544/1033173712";
 
-    private readonly string testDeviceID = ""; // 테스트 기기를 추가할 경우 사용
+    private readonly string testDeviceID = "50888EAC7F807CCC"; // galaxy s10 device id
 
     private InterstitialAd interstitialAd;
 
@@ -21,7 +21,7 @@ public class AdmobInterstitialAd : MonoBehaviour
 
     private void InitAd()
     {
-        string id = Debug.isDebugBuild ? testDeviceID : unitID;
+        string id = Debug.isDebugBuild ? testUnitID : unitID;
         
         interstitialAd = new InterstitialAd(id);
 
