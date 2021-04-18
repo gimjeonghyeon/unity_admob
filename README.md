@@ -26,4 +26,8 @@
 ### 4. 빌드
 * 안드로이드 빌드
   * Development Build 설정
-  * 빌드 실패
+  * 디바이스에서 실행시 크래쉬 발생 해결
+   * 1. JAVA_HOME 환경변수 경로 재설정
+   * 2. GoogleMobileAdsSettings > GoogleAdMob Enabled 를 true 로 설정하고 AdMob App ID(android) 추가
+   * 3. AdMob App ID(iOS) 추가 및 테스트 디바이스 아이디 설정, 스크립트의 테스트 광고 아이디 대신 테스트 디바이스 아이디가 설정된 부분 수정
+   * 4. AdMob App ID를 올바른 유효한 값으로 재설정 (구글 애드몹에서 추가한 앱의 ID가 아닌 샘플 광고 아이디를 설정해주어 발생한 문제...) -> 앱 실행 후 정상 동작 확인
