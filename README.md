@@ -23,3 +23,7 @@
   * android SDK & JDK 버전 및 미설치, 금융 사이트등에서의 보안프로그램 실행으로 인해
   * 폴더 경로에 더블 바이트 문자가 포함되어 있을 경우 (ExecutionEngineException: String conversion error: Illegal byte sequence encounted in the input.)
 
+### 4. 빌드
+* 안드로이드 빌드
+  * Development Build 설정
+  * 빌드 실패
