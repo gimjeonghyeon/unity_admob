@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 using GoogleMobileAds.Api;
 
@@ -9,14 +8,11 @@ public class AdmobInterstitialAd : MonoBehaviour
     private readonly string unitID = "ca-app-pub-3940256099942544/1033173712";
     private readonly string testUnitID = "ca-app-pub-3940256099942544/1033173712";
 
-    private readonly string testDeviceID = "50888EAC7F807CCC"; // galaxy s10 device id
-
     private InterstitialAd interstitialAd;
 
     private void Start()
     {
         InitAd();
-        Invoke("Show", 10f);
     }
 
     private void InitAd()
@@ -32,7 +28,7 @@ public class AdmobInterstitialAd : MonoBehaviour
         interstitialAd.OnAdClosed += (sender, args) => Debug.Log("광고가 닫힘");
     }
 
-    public void Show()
+    public void OnClickInterstitialAd()
     {
         StartCoroutine("ShowInterstitialAd");
     }

@@ -1,5 +1,6 @@
 ﻿using GoogleMobileAds.Api;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AdmobBanner : MonoBehaviour
 {
@@ -11,7 +12,8 @@ public class AdmobBanner : MonoBehaviour
     private BannerView banner;
 
     public AdPosition position;
-
+    public Text buttonText;
+    
     private void Start()
     {
         InitAd();
@@ -28,15 +30,21 @@ public class AdmobBanner : MonoBehaviour
         banner.LoadAd(request);
     }
 
-    public void ToggleAd(bool active)
+    public void ToggleAd(Toggle toggle)
     {
-        if (active)
+        if (toggle.isOn)
         {
             banner.Show();
+            buttonText.text = "Hide Banner Ad";
+            Debug.Log("Show");
+            
         }
         else
         {
             banner.Hide();
+            buttonText.text = "Show Banner Ad";
+            Debug.Log("Hide");
+
         }
     }
 
