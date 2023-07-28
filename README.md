@@ -12,7 +12,7 @@
 * 광고 형식 (배너 / 전면 / 보상형 전면 광고 / 리워드 등)
 * 광고 단위 이름 입력후 광고 단위 추가
 * 생성된 광고 단위의 광고 아이디 확인
-* 실제 출시할 앱이 아니라면 이 과정을 생략하고 [샘플 광고 아이디](https://developers.google.com/admob/android/test-ads?hl=ko, "테스트 광고 사용 설정")를 
+* 실제 출시할 앱이 아니라면 이 과정을 생략하고 [샘플 광고 아이디](https://developers.google.com/admob/android/test-ads?hl=ko, "테스트 광고 사용 설정")를 입력
 
 ### 3. 구글 애드몹 유니티 플러그인 추가
 * [googleads-mobile-unity](https://github.com/googleads/googleads-mobile-unity/releases, "googleads-mobile-unity github")에서 최신 버전의 유니티 패키지 다운로드
